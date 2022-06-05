@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{title}}</title>
+</head>
+<body>
+<a href="{% url 'mod' %}">Go Back</a>
+	<form method='POST' action=''>{% csrf_token %}
+		{{form}}
+
+        <input type="submit" value='Save'/>
+    </form>
+
+</body>
+</html>
